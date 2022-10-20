@@ -1,14 +1,15 @@
 import Head from 'next/head'
 
-export default function Home() {
+const about = () => {
   return (
     <div>
       <Head>
         <title>Andor Portfolio</title>
         <meta name='keywords' content='portfolio' />
       </Head>
-
-      <h1>Welcome to next</h1>
+      <h1>About 1</h1>
     </div>
   )
 }
+
+export default about
