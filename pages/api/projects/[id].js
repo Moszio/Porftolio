@@ -1,6 +1,6 @@
 import { projects } from '../../../data'
 
-const handler = ({ query: { id } }, res) => {
+const idPointer = ({ query: { id } }, res) => {
   const filtered = projects.filter((project) => project.id === id)
 
   if (filtered.length > 0) {
@@ -10,4 +10,4 @@ const handler = ({ query: { id } }, res) => {
   }
 }
 
-export default handler
+export default idPointer
